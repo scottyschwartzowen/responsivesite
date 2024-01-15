@@ -1,0 +1,320 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto Slab", serif;
+  background-color: rgb(157, 187, 248);
+  color: rgb(57, 118, 240);
+}
+
+/* Nav */
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 6rem;
+  background-color: rgb(57, 118, 240);
+}
+
+.logo {
+  color: #fff;
+  position: absolute;
+  left: 40px;
+  font-family: "Cabin Sketch", cursive;
+  font-size: 2.8em;
+}
+
+.nav p {
+  color: rgb(57, 118, 240);
+  font-size: 1.2em;
+  background-color: rgb(157, 187, 248);
+  padding: 5px;
+  margin-right: 10px;
+  text-align: right;
+  position: relative;
+}
+
+.nav li {
+  display: inline-block;
+  font-size: 1.8em;
+  padding: 10px 30px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: 0.1em;
+}
+
+.nav a:hover {
+  color: rgb(164, 202, 213);
+  text-shadow: -1px -1px;
+}
+
+/* Banner */
+
+.banner {
+  text-align: center;
+  background-image: url(https://images.unsplash.com/photo-1589575452662-c174ace01f7f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2750&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 37%;
+  height: 40rem;
+}
+
+.banner h1 {
+  font-size: 4em;
+  position: absolute;
+  left: 200px;
+  top: 320px;
+  color: #fff;
+}
+
+.middle {
+  height: 400px;
+  display: flex;
+  letter-spacing: 0.06em;
+  align-items: center;
+}
+
+.mid-1 {
+  width: 30%;
+  font-size: 2rem;
+  position: relative;
+  left: 20%;
+  font-family: "Cabin Sketch", cursive;
+  color: rgb(57, 118, 240);
+  border: 5px solid rgb(57, 118, 240);
+  border-radius: 10px;
+  padding: 5px 30px;
+  box-sizing: border-box;
+}
+
+.mid-2 {
+  width: 40%;
+  padding: 40px;
+  font-size: 1.8em;
+  position: relative;
+  left: 22%;
+}
+
+.mid-3 {
+  width: 68%;
+  font-size: 1.4em;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.mid-3 h3 {
+  margin-top: 15px;
+}
+
+/* Photos */
+
+.photos {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 30px;
+}
+
+.photos img {
+  width: 22%;
+  height: 470px;
+}
+
+.photos-2 {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10px;
+  padding-bottom: 20px;
+}
+
+.photos-2 img {
+  width: 22%;
+  height: 470px;
+}
+
+/* Footer */
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0 5px;
+  background-color: rgb(57, 118, 240);
+  color: #fff;
+  padding: 10px;
+}
+
+.footer img {
+  height: 125px;
+  width: 175px;
+  border-radius: 10px;
+}
+
+.footer-1 {
+  padding-right: 10%;
+}
+
+.footer-2 {
+  margin: 30px;
+}
+
+@media only screen and (max-width: 1500px) {
+  .photos img,
+  .photos-2 img {
+    height: 350px;
+  }
+
+  .nav li {
+    padding: 20px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  body {
+    font-size: 13px;
+  }
+
+  .nav p {
+    font-size: 1.1em;
+  }
+
+  .photos img,
+  .photos-2 img {
+    height: 320px;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .nav li {
+    padding: 10px;
+    font-size: 1.4em;
+  }
+
+  .logo {
+    font-size: 2.1em;
+    left: 10px;
+  }
+
+  .nav p {
+    font-size: 1em;
+  }
+
+  .banner h1 {
+    left: 120px;
+  }
+
+  .middle {
+    width: 75%;
+  }
+
+  .mid-1,
+  .mid-2 {
+    width: 50%;
+    font-size: 1.6em;
+  }
+
+  .photos img,
+  .photos-2 img {
+    width: 30%;
+    height: 300px;
+    margin-bottom: 2px;
+  }
+
+  .footer-1 {
+    margin-left: 40px;
+  }
+}
+
+@media only screen and (max-width: 675px) {
+  .nav li {
+    font-size: 1.1em;
+    padding: 5px;
+  }
+
+  .banner h1 {
+    left: 60px;
+  }
+
+  .mid-1 {
+    left: 15%;
+  }
+
+  .mid-2 {
+    width: 1000%;
+    font-size: 1.7em;
+  }
+
+  .footer {
+    margin-top: 0px;
+  }
+
+  .footer-1 {
+    margin-left: 30px;
+  }
+
+  .logo {
+    font-size: 1.9em;
+  }
+
+  .nav p {
+    font-size: 0.9em;
+  }
+
+  .photos,
+  .photos-2 {
+    display: block;
+    text-align: center;
+  }
+
+  .photos img,
+  .photos-2 img {
+    width: 50%;
+    height: 380px;
+    margin-bottom: 2px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .logo {
+    font-size: 1.35em;
+  }
+
+  .banner h1 {
+    font-size: 2.6em;
+    left: 20px;
+  }
+
+  .nav p {
+    font-size: 0.8em;
+  }
+
+  .nav li {
+    font-size: 1em;
+  }
+
+  .mid-1,
+  .mid-2,
+  .mid-3 {
+    font-size: 1.2em;
+  }
+
+  .footer {
+    font-size: 0.7em;
+  }
+
+  .photos img,
+  .photos-2 img {
+    width: 70%;
+    height: 380px;
+    margin-bottom: 2px;
+  }
+}

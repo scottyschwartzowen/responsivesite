@@ -1,6 +1,6 @@
 ![img](/screenshot.png)
 
-[LINK](https://scottyschwartzowen.github.io/responsiveclubwebsite/)
+[LINK](https://scottyschwartzowen.github.io/responsivesite/)
 
 # (my first ever) Static Site
 

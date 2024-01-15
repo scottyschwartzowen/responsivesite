@@ -6,6 +6,8 @@
 
 - Built with HTML & CSS
 
+- Used to learn Git & GitHub
+
 # Features
 
 - Navigation menu to external links
